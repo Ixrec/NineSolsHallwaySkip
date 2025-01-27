@@ -3,10 +3,10 @@ schemaVersion = "0.0.1"
 
 [package]
 namespace = "Ixrec"
-name = "CutsceneSkip"
+name = "HallwaySkip"
 versionNumber = "0.1.0"
-description = "A Nine Sols mod that enables skipping any cutscene or dialogue (that won't break the game)."
-websiteUrl = "https://github.com/Ixrec/NineSolsCutsceneSkip"
+description = "A Nine Sols mod that lets you skip the long hallway fight sequence after the Point of no Return"
+websiteUrl = "https://github.com/Ixrec/NineSolsHallwaySkip"
 containsNsfwContent = false
 
 [package.dependencies]
