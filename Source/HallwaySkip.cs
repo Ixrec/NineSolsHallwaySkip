@@ -1,6 +1,5 @@
 ﻿using BepInEx;
 using BepInEx.Configuration;
-using Dialogue;
 using HarmonyLib;
 using NineSolsAPI;
 using UnityEngine;
@@ -33,18 +32,17 @@ public class HallwaySkip : BaseUnityPlugin {
 
         Logger.LogInfo($"Plugin {PluginInfo.PLUGIN_GUID} is loaded!");
 
-        Notifications.Awake();
+        TextDisplay.Awake();
     }
 
-    public static SimpleCutsceneManager activeCutscene = null;
+    public static SimpleCutsceneManager activeHallwayCutscene = null;
 
     private void SkipHallwayCutscene() {
-        if (activeCutscene != null) {
-            var scm = activeCutscene;
-            Log.Info($"calling TrySkip() on {scm.name}");
-            AccessTools.Method(typeof(SimpleCutsceneManager), "TrySkip").Invoke(scm, []);
-            activeCutscene = null;
-            return;
+        if (activeHallwayCutscene != null) {
+            Log.Info($"calling TrySkip() on {activeHallwayCutscene.name}");
+            AccessTools.Method(typeof(SimpleCutsceneManager), "TrySkip").Invoke(activeHallwayCutscene, []);
+            activeHallwayCutscene = null;
+            TextDisplay.TextComponent.text = null;
         }
     }
 
@@ -52,6 +50,6 @@ public class HallwaySkip : BaseUnityPlugin {
         // Make sure to clean up resources here to support hot reloading
 
         harmony.UnpatchSelf();
-        Notifications.OnDestroy();
+        TextDisplay.OnDestroy();
     }
 }
