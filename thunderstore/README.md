@@ -7,3 +7,5 @@ The keybind for actually skipping can be changed (if you're new to Nine Sols mod
 This is what it looks like:
 
 ![Demonstration: Skipping the Hallway Fight](https://github.com/Ixrec/NineSolsHallwaySkip/blob/main/hallway_demo.gif?raw=true)
+
+When combined with Cutscene Skip, you can even skip the short cutscenes before and after the fight.

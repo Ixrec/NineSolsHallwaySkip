@@ -8,6 +8,8 @@ This is what it looks like:
 
 ![Demonstration: Skipping the Hallway Fight](https://github.com/Ixrec/NineSolsHallwaySkip/blob/main/hallway_demo.gif?raw=true)
 
+When combined with Cutscene Skip, you can even skip the short cutscenes before and after the fight.
+
 ## Contribution / Development
 
 Should be the same as any other Nine Sols mod. See https://github.com/nine-sols-modding/NineSols-ExampleMod for detailed instructions.
