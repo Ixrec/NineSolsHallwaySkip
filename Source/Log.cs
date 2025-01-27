@@ -1,6 +1,6 @@
 using BepInEx.Logging;
 
-namespace CutsceneSkip;
+namespace HallwaySkip;
 
 internal static class Log {
     private static ManualLogSource? logSource;

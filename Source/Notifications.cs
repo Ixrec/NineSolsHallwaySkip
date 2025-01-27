@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using System.Linq;
 
-namespace CutsceneSkip;
+namespace HallwaySkip;
 
 /*
  * I wrote my own notification manager for two reasons:
